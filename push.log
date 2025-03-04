@@ -1,0 +1,153 @@
+00:04:06.419444 exec-cmd.c:243          trace: resolved executable dir: C:/Program Files/Git/mingw64/bin
+00:04:06.450678 git.c:472               trace: built-in: git push origin main
+00:04:06.454194 run-command.c:667       trace: run_command: GIT_DIR=.git git remote-https origin https://github.com/lusilili/CT-Check.git
+00:04:06.454194 run-command.c:928       trace: start_command: git remote-https origin https://github.com/lusilili/CT-Check.git
+00:04:06.491467 exec-cmd.c:243          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+00:04:06.517498 git.c:758               trace: exec: git-remote-https origin https://github.com/lusilili/CT-Check.git
+00:04:06.517498 run-command.c:667       trace: run_command: git-remote-https origin https://github.com/lusilili/CT-Check.git
+00:04:06.517498 run-command.c:928       trace: start_command: git-remote-https origin https://github.com/lusilili/CT-Check.git
+00:04:06.550896 exec-cmd.c:243          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+00:04:06.588578 http.c:937              == Info: Couldn't find host github.com in the .netrc file; using defaults
+00:04:06.623024 http.c:937              == Info: Host github.com:443 was resolved.
+00:04:06.623024 http.c:937              == Info: IPv6: (none)
+00:04:06.623024 http.c:937              == Info: IPv4: 20.205.243.166
+00:04:06.624024 http.c:937              == Info:   Trying 20.205.243.166:443...
+00:04:06.819240 http.c:937              == Info: Connected to github.com (20.205.243.166) port 443
+00:04:06.819863 http.c:937              == Info: ALPN: curl offers http/1.1
+00:04:06.819863 http.c:937              == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+00:04:06.961454 http.c:937              == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+00:04:06.962462 http.c:937              == Info: TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+00:04:06.962462 http.c:937              == Info: TLSv1.3 (IN), TLS handshake, Certificate (11):
+00:04:06.962462 http.c:937              == Info: TLSv1.3 (IN), TLS handshake, CERT verify (15):
+00:04:06.963463 http.c:937              == Info: TLSv1.3 (IN), TLS handshake, Finished (20):
+00:04:06.963463 http.c:937              == Info: TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+00:04:06.963463 http.c:937              == Info: TLSv1.3 (OUT), TLS handshake, Finished (20):
+00:04:06.963463 http.c:937              == Info: SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / x25519 / id-ecPublicKey
+00:04:06.963463 http.c:937              == Info: ALPN: server accepted http/1.1
+00:04:06.963463 http.c:937              == Info: Server certificate:
+00:04:06.963463 http.c:937              == Info:  subject: CN=github.com
+00:04:06.963463 http.c:937              == Info:  start date: Feb  5 00:00:00 2025 GMT
+00:04:06.963463 http.c:937              == Info:  expire date: Feb  5 23:59:59 2026 GMT
+00:04:06.963463 http.c:937              == Info:  issuer: C=GB; ST=Greater Manchester; L=Salford; O=Sectigo Limited; CN=Sectigo ECC Domain Validation Secure Server CA
+00:04:06.963463 http.c:937              == Info:  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+00:04:06.963463 http.c:937              == Info:   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA256
+00:04:06.963463 http.c:937              == Info:   Certificate level 1: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+00:04:06.963463 http.c:937              == Info:   Certificate level 2: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using sha384WithRSAEncryption
+00:04:06.963463 http.c:937              == Info: using HTTP/1.x
+00:04:06.963463 http.c:884              => Send header, 0000000199 bytes (0x000000c7)
+00:04:06.963463 http.c:896              => Send header: GET /lusilili/CT-Check.git/info/refs?service=git-receive-pack HTTP/1.1
+00:04:06.963463 http.c:896              => Send header: Host: github.com
+00:04:06.963463 http.c:896              => Send header: User-Agent: git/2.46.0.windows.1
+00:04:06.963463 http.c:896              => Send header: Accept: */*
+00:04:06.963463 http.c:896              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+00:04:06.963463 http.c:896              => Send header: Pragma: no-cache
+00:04:06.963463 http.c:896              => Send header:
+00:04:06.963463 http.c:937              == Info: Request completely sent off
+00:04:07.082638 http.c:937              == Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+00:04:07.082638 http.c:937              == Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+00:04:07.348505 http.c:884              <= Recv header, 0000000027 bytes (0x0000001b)
+00:04:07.348505 http.c:896              <= Recv header: HTTP/1.1 401 Unauthorized
+00:04:07.349509 http.c:884              <= Recv header, 0000000026 bytes (0x0000001a)
+00:04:07.349509 http.c:896              <= Recv header: Server: GitHub-Babel/3.0
+00:04:07.349509 http.c:884              <= Recv header, 0000000054 bytes (0x00000036)
+00:04:07.349509 http.c:896              <= Recv header: Content-Security-Policy: default-src 'none'; sandbox
+00:04:07.349509 http.c:884              <= Recv header, 0000000041 bytes (0x00000029)
+00:04:07.349509 http.c:896              <= Recv header: Content-Type: text/plain; charset=UTF-8
+00:04:07.349509 http.c:884              <= Recv header, 0000000040 bytes (0x00000028)
+00:04:07.349509 http.c:896              <= Recv header: www-authenticate: Basic realm="GitHub"
+00:04:07.349509 http.c:884              <= Recv header, 0000000020 bytes (0x00000014)
+00:04:07.349509 http.c:896              <= Recv header: Content-Length: 26
+00:04:07.349509 http.c:884              <= Recv header, 0000000037 bytes (0x00000025)
+00:04:07.349509 http.c:896              <= Recv header: Date: Tue, 04 Mar 2025 16:04:05 GMT
+00:04:07.349509 http.c:884              <= Recv header, 0000000023 bytes (0x00000017)
+00:04:07.349509 http.c:896              <= Recv header: X-Frame-Options: DENY
+00:04:07.349509 http.c:884              <= Recv header, 0000000073 bytes (0x00000049)
+00:04:07.349509 http.c:896              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+00:04:07.349509 http.c:884              <= Recv header, 0000000056 bytes (0x00000038)
+00:04:07.349509 http.c:896              <= Recv header: X-GitHub-Request-Id: 0E4F:3BA1B:2362EE:297DE5:67C72475
+00:04:07.349509 http.c:884              <= Recv header, 0000000002 bytes (0x00000002)
+00:04:07.349509 http.c:896              <= Recv header:
+00:04:07.349509 http.c:937              == Info: Connection #0 to host github.com left intact
+00:04:07.349509 run-command.c:667       trace: run_command: 'git credential-manager get'
+00:04:07.350505 run-command.c:928       trace: start_command: 'C:/Program Files/Git/usr/bin/sh.exe' -c 'git credential-manager get' 'git credential-manager get'
+00:04:07.465577 exec-cmd.c:243          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+00:04:07.495159 git.c:758               trace: exec: git-credential-manager get
+00:04:07.495159 run-command.c:667       trace: run_command: git-credential-manager get
+00:04:07.495159 run-command.c:928       trace: start_command: git-credential-manager get
+00:04:07.714094 exec-cmd.c:243          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+00:04:07.741777 git.c:472               trace: built-in: git config --null --list
+00:04:08.144019 http.c:937              == Info: Found bundle for host: 0x1964fcc4490 [serially]
+00:04:08.144019 http.c:937              == Info: Re-using existing connection with host github.com
+00:04:08.144019 http.c:937              == Info: Server auth using Basic with user 'lusilili'
+00:04:08.144019 http.c:884              => Send header, 0000000290 bytes (0x00000122)
+00:04:08.144019 http.c:896              => Send header: GET /lusilili/CT-Check.git/info/refs?service=git-receive-pack HTTP/1.1
+00:04:08.144019 http.c:896              => Send header: Host: github.com
+00:04:08.144019 http.c:896              => Send header: Authorization: Basic <redacted>
+00:04:08.144019 http.c:896              => Send header: User-Agent: git/2.46.0.windows.1
+00:04:08.144019 http.c:896              => Send header: Accept: */*
+00:04:08.144019 http.c:896              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+00:04:08.144019 http.c:896              => Send header: Pragma: no-cache
+00:04:08.144019 http.c:896              => Send header:
+00:04:08.144019 http.c:937              == Info: Request completely sent off
+00:04:08.567954 http.c:884              <= Recv header, 0000000017 bytes (0x00000011)
+00:04:08.567954 http.c:896              <= Recv header: HTTP/1.1 200 OK
+00:04:08.567954 http.c:884              <= Recv header, 0000000026 bytes (0x0000001a)
+00:04:08.567954 http.c:896              <= Recv header: Server: GitHub-Babel/3.0
+00:04:08.567954 http.c:884              <= Recv header, 0000000060 bytes (0x0000003c)
+00:04:08.567954 http.c:896              <= Recv header: Content-Type: application/x-git-receive-pack-advertisement
+00:04:08.567954 http.c:884              <= Recv header, 0000000054 bytes (0x00000036)
+00:04:08.567954 http.c:896              <= Recv header: Content-Security-Policy: default-src 'none'; sandbox
+00:04:08.567954 http.c:884              <= Recv header, 0000000040 bytes (0x00000028)
+00:04:08.567954 http.c:896              <= Recv header: expires: Fri, 01 Jan 1980 00:00:00 GMT
+00:04:08.567954 http.c:884              <= Recv header, 0000000018 bytes (0x00000012)
+00:04:08.567954 http.c:896              <= Recv header: pragma: no-cache
+00:04:08.567954 http.c:884              <= Recv header, 0000000053 bytes (0x00000035)
+00:04:08.567954 http.c:896              <= Recv header: Cache-Control: no-cache, max-age=0, must-revalidate
+00:04:08.568956 http.c:884              <= Recv header, 0000000023 bytes (0x00000017)
+00:04:08.568956 http.c:896              <= Recv header: Vary: Accept-Encoding
+00:04:08.568956 http.c:884              <= Recv header, 0000000028 bytes (0x0000001c)
+00:04:08.568956 http.c:896              <= Recv header: Transfer-Encoding: chunked
+00:04:08.568956 http.c:884              <= Recv header, 0000000037 bytes (0x00000025)
+00:04:08.568956 http.c:896              <= Recv header: Date: Tue, 04 Mar 2025 16:04:06 GMT
+00:04:08.568956 http.c:884              <= Recv header, 0000000023 bytes (0x00000017)
+00:04:08.568956 http.c:896              <= Recv header: X-Frame-Options: DENY
+00:04:08.568956 http.c:884              <= Recv header, 0000000073 bytes (0x00000049)
+00:04:08.568956 http.c:896              <= Recv header: Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+00:04:08.568956 http.c:884              <= Recv header, 0000000056 bytes (0x00000038)
+00:04:08.568956 http.c:896              <= Recv header: X-GitHub-Request-Id: 0E4F:3BA1B:2363D7:297EF2:67C72476
+00:04:08.568956 http.c:884              <= Recv header, 0000000002 bytes (0x00000002)
+00:04:08.568956 http.c:896              <= Recv header:
+00:04:08.568956 http.c:937              == Info: Connection #0 to host github.com left intact
+00:04:08.568956 run-command.c:667       trace: run_command: 'git credential-manager store'
+00:04:08.569955 run-command.c:928       trace: start_command: 'C:/Program Files/Git/usr/bin/sh.exe' -c 'git credential-manager store' 'git credential-manager store'
+00:04:08.674871 exec-cmd.c:243          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+00:04:08.699425 git.c:758               trace: exec: git-credential-manager store
+00:04:08.700424 run-command.c:667       trace: run_command: git-credential-manager store
+00:04:08.700424 run-command.c:928       trace: start_command: git-credential-manager store
+00:04:08.910013 exec-cmd.c:243          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+00:04:08.935542 git.c:472               trace: built-in: git config --null --list
+00:04:09.232147 run-command.c:667       trace: run_command: 'git credential-store store'
+00:04:09.233154 run-command.c:928       trace: start_command: 'C:/Program Files/Git/usr/bin/sh.exe' -c 'git credential-store store' 'git credential-store store'
+00:04:09.337539 exec-cmd.c:243          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+00:04:09.361650 git.c:472               trace: built-in: git credential-store store
+00:04:09.370655 run-command.c:667       trace: run_command: git send-pack --stateless-rpc --helper-status --thin --no-progress https://github.com/lusilili/CT-Check.git/ --stdin
+00:04:09.370655 run-command.c:928       trace: start_command: git send-pack --stateless-rpc --helper-status --thin --no-progress https://github.com/lusilili/CT-Check.git/ --stdin
+00:04:09.400719 exec-cmd.c:243          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+00:04:09.427300 git.c:472               trace: built-in: git send-pack --stateless-rpc --helper-status --thin --no-progress https://github.com/lusilili/CT-Check.git/ --stdin
+00:04:09.431805 run-command.c:667       trace: run_command: git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset -q
+00:04:09.431805 run-command.c:928       trace: start_command: git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset -q
+00:04:09.463078 exec-cmd.c:243          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+00:04:09.489112 git.c:472               trace: built-in: git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset -q
+00:04:14.488875 http.c:937              == Info: Found bundle for host: 0x1964fcc4490 [serially]
+00:04:14.488875 http.c:937              == Info: Re-using existing connection with host github.com
+00:04:14.488875 http.c:937              == Info: Server auth using Basic with user 'lusilili'
+00:04:14.489877 http.c:884              => Send header, 0000000370 bytes (0x00000172)
+00:04:14.489877 http.c:896              => Send header: POST /lusilili/CT-Check.git/git-receive-pack HTTP/1.1
+00:04:14.489877 http.c:896              => Send header: Host: github.com
+00:04:14.489877 http.c:896              => Send header: Authorization: Basic <redacted>
+00:04:14.489877 http.c:896              => Send header: User-Agent: git/2.46.0.windows.1
+00:04:14.489877 http.c:896              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+00:04:14.489877 http.c:896              => Send header: Content-Type: application/x-git-receive-pack-request
+00:04:14.489877 http.c:896              => Send header: Accept: application/x-git-receive-pack-result
+00:04:14.489877 http.c:896              => Send header: Content-Length: 120674328
+00:04:14.489877 http.c:896              => Send header:

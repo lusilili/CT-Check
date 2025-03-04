@@ -1,0 +1,12 @@
+
+
+1D:/鹿嗣/Desktop/CT_ui/val/normal/NORMAL2-IM-1067-0001-0001.jpeg
+1正常肺部 概率: 0.997
+
+
+1D:/鹿嗣/Desktop/CT_ui/val/opacity/person1418_virus_2429.jpeg
+1病毒性肺炎 概率: 0.979
+
+
+1D:/鹿嗣/Desktop/CT_ui/val/opacity/person1400_bacteria_3550.jpeg
+1病毒性肺炎 概率: 1.0
